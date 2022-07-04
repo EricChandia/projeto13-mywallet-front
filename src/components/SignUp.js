@@ -30,7 +30,7 @@ export default function SignUp(){
                 password: senha
             }
 
-            const promise = axios.post("http://localhost:5000/sign-up", usuario)
+            const promise = axios.post("https://ericchandia-projeto13-mywallet.herokuapp.com/sign-up", usuario)
             .then(resposta => SignUpSucess(resposta))
             .catch(
                 resposta => {

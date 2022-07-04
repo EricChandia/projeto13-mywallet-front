@@ -30,7 +30,7 @@ export default function MyWallet(){
     function getRecords(){
         let sum = 0;
 
-        const promise = axios.get(`http://localhost:5000/getRecords`, 
+        const promise = axios.get(`https://ericchandia-projeto13-mywallet.herokuapp.com/getRecords`, 
         config);
 
         promise.then((resposta) => {

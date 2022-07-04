@@ -27,7 +27,7 @@ export default function NewIn(){
         const valorEmReais = Number(valor.replace(",", "."));
         const descricao = descr;
 
-        const promise = axios.post("http://localhost:5000/NewIn", {value: valorEmReais, descr: descricao, type: "in"}, config);
+        const promise = axios.post("https://ericchandia-projeto13-mywallet.herokuapp.com/NewIn", {value: valorEmReais, descr: descricao, type: "in"}, config);
 
         promise.then(response => {
             console.log("Entrada realizada com sucesso");
